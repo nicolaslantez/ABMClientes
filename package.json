@@ -1,19 +1,28 @@
 {
-  "name": "nodeandgo",
+  "name": "abmclientes",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mu2": "^0.5.21",
     "multer": "^1.2.0",
     "request": "^2.79.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaslantez/ABMClientes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolaslantez/ABMClientes/issues"
+  },
+  "homepage": "https://github.com/nicolaslantez/ABMClientes#readme"
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- JQUERY -->
+	<script src="libs/jquery.min.js"></script>
+	<!-- LIBS -->
+	<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/listadoClientes.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="js/dataEntry.js"></script>
+	<title>Pegandole a la API de GO</title>
+</head>
+<body>
+	<div class="panel panel-primary"> 
+		<div class="panel-heading">
+			<h1>
+				<p class="text-center">Listado de Clientes</p>
+			</h1>
+		</div>
+		<div class="panelButtons">
+			<a class="btn icon-btn btn-warning" href="/nuevoCliente">
+				<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-warning"></span>
+				Añadir Cliente
+			</a>
+			<a class="btn icon-btn btn-danger" href="/listaClientes">
+				<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-danger"></span>
+				Vista One Page
+			</a>
+		</div>
+		<div class="panel-body">
+			<table id="clientes" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        		<thead>
+					<tr>
+						<th>IdCliente</th>
+						<th>Apellido</th>
+						<th>Nombre</th>
+						<th>Categoria</th>
+						<th>FechaNacimiento</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#clientes}}
+           			<tr>
+               			<td>{{IdCliente}}</td>
+               			<td>{{Apellido}}</td>
+               			<td>{{Nombre}}</td>
+               			<td>{{Categoria}}</td>
+               			<td>{{FechaNacimiento}}</td>
+           			</tr>   
+    				{{/clientes}}
+    			</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

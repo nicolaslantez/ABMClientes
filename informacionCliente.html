@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- JQUERY -->
+	<script src="/libs/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/js/bootstrap.min.js"></script>
+	<title>Pegandole a la API de GO</title>
+</head>
+<body>
+
+    <div class="panel panel-primary"> 
+        <div class="panel-heading">
+            <h1>
+                <p class="text-center">Información del Cliente</p>
+            </h1>
+        </div>
+        <div class="panel-body">
+        {{#cliente}}
+           <div class="list-group list-group-item active">
+                  <h4 class="list-group-item-heading ">{{Apellido}}, {{Nombre}}</h4>
+                  <p class="list-group-item-text"> 
+                     <ul>
+                        <li>Identificador: {{IdCliente}}</li>
+                        <li>Categoria: {{Categoria}}</li>
+                        <li>Fecha de Nacimiento: {{FechaNacimiento}}</li>
+                     </ul>
+                  </p>
+           </div>
+        {{/cliente}}
+        </div>
+           <div class="text-center">
+                <a href="/listaClientes">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                           Volver
+                    </button>
+                </a>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- JQUERY -->
+	<script src="libs/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/nuevoCliente.css" rel="stylesheet">
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/validaciones.js"></script>
+
+	<title>Pegandole a la API de GO</title>
+</head>
+<body>
+	<div class="panel panel-primary"> 
+		<div class="panel-heading">
+			<h1>
+				<p class="text-center">Alta de Nuevo Cliente</p>
+			</h1>
+		</div>
+  		<div class="panel-body">
+  			<form action="http://localhost:9000/addCliente" method="post">
+        <!-- <form> -->
+ 				<div class="form-group">
+    				<div class="input-group col-xs-2">
+     					<div class="input-group-addon">ID</div>
+      					<input type="text" class="form-control" id="id" name="id" required="required">
+    				</div>
+    			</div>
+
+    			<div class="form-group">
+    				<div class="input-group col-xs-5">
+     					<div class="input-group-addon">Nombre</div>
+      					<input type="text" class="form-control" id="nombre" name="nombre" required="required">
+    				</div>
+    			</div>
+
+    			<div class="form-group">
+    				<div class="input-group col-xs-5">
+     					<div class="input-group-addon">Apellido</div>
+      					<input type="text" class="form-control" id="apellido" name="apellido" required="required">
+    				</div>
+    			</div>
+
+    			<div class="form-group">
+    				<div class="input-group col-xs-2">
+     					<div class="input-group-addon">Categoria</div>
+    					<select class="form-control" id="exampleSelect1" name="categoria">
+    						<option selected disabled></option>
+     			 			<option>BAJA</option>
+      						<option>MEDIA</option>
+      						<option>ALTA</option>
+      					</select>
+  					</div>
+    			</div>
+    			<div class="form-group form-inline">
+              <div class="input-group-addon fechaNacimientoInline">Fecha de Nacimiento</div>
+              <select class="form-control" id="dia" name="diaNacimiento"></select>
+              <select class="form-control" id="mes" name="mesNacimiento"></select>
+              <select class="form-control" id="año" name="añoNacimiento"></select>
+          </div>
+ 				<button type="submit" class="btn btn-primary">Cargar</button>
+			</form>
+   		</div>
+        <div class="text-center">
+                <a href="/listaClientes">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                           Volver
+                    </button>
+                </a>
+            </div>
+  	</div>
+</body>
+</html>
